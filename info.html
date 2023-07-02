@@ -1,0 +1,11 @@
+<h1>Info</h1>
+
+<h2>Configuration</h2>
+
+<ol>
+  <li>Enbable Github Actions in repository</li>
+  <li>Create and IAM user with access to CloudFront and S3, save access key as repository secret</li>
+  <li>In the deploy action's config, the configure-aws-credentials package to login as the IAM user with the saved keys</li>
+  <li>Add step to checkout latest and replace S3 bucket with it's contents </li>
+  <li>Add step to invalidate CloudFront cache</li>
+</ol>
